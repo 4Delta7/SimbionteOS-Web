@@ -1,0 +1,12 @@
+{
+  "name": "Simbionte OS",
+  "version": "1.0",
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        { "path": "SimbionteOS.bin", "offset": 0 }
+      ]
+    }
+  ]
+}
