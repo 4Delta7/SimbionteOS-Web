@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simbionte - El Copiloto de tu Prusa Core One</title>
+    <title>Simbionte - El Copiloto de tu Impresora 3D</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -71,9 +71,9 @@
 
     <header class="relative py-20 lg:py-32 text-center">
         <div class="max-w-6xl mx-auto px-4 relative z-10">
-            <span data-i18n="badge" class="inline-flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-medium bg-prusaOrange/10 text-prusaOrange border border-prusaOrange/20 mb-6">Optimizado para Prusa Core One</span>
-            <h1 data-i18n="heroTitle" class="text-5xl sm:text-7xl font-extrabold text-white tracking-tight mb-6">Tu Prusa nunca volverá a estar <span class="text-prusaOrange">Sola</span></h1>
-            <p data-i18n="heroDesc" class="max-w-2xl mx-auto text-lg text-textMuted mb-10">Un copiloto de código abierto que se integra con la API de PrusaLink. Traduce telemetría en emociones, vigila la humedad y reacciona al estado de tu máquina en tiempo real.</p>
+            <span data-i18n="badge" class="inline-flex items-center gap-1.5 py-1 px-3 rounded-full text-xs font-medium bg-prusaOrange/10 text-prusaOrange border border-prusaOrange/20 mb-6">Compatible con PrusaLink y Klipper</span>
+            <h1 data-i18n="heroTitle" class="text-5xl sm:text-7xl font-extrabold text-white tracking-tight mb-6">Tu impresora nunca volverá a estar <span class="text-prusaOrange">Sola</span></h1>
+            <p data-i18n="heroDesc" class="max-w-2xl mx-auto text-lg text-textMuted mb-10">Un copiloto de código abierto que se integra con las APIs de PrusaLink y Klipper. Traduce telemetría en emociones, vigila la humedad y reacciona al estado de tu máquina en tiempo real.</p>
             <div class="flex flex-wrap justify-center gap-4">
                 <a href="#install" data-i18n="btnHero1" class="inline-block bg-prusaOrange hover:bg-orange-600 text-white font-bold px-8 py-3 rounded-lg transition-all shadow-lg shadow-prusaOrange/20 hover:shadow-prusaOrange/40 hover:-translate-y-0.5">Flashear Firmware</a>
                 <a href="#bom" data-i18n="btnHero2" class="inline-block bg-gray-800 hover:bg-gray-700 text-white font-bold px-8 py-3 rounded-lg border border-gray-700 transition-all hover:-translate-y-0.5">Ver Materiales</a>
@@ -106,7 +106,7 @@
                         <h3 class="text-2xl font-bold text-white">Simbionte <span class="text-gray-500">LITE</span></h3>
                         <i data-lucide="printer" class="w-8 h-8 text-gray-500"></i>
                     </div>
-                    <p data-i18n="liteDesc" class="text-textMuted mb-6 flex-grow">La opción plug-and-play. Imprime el chasis y las caras intercambiables. Cero electrónica, 100% estética para acompañar tu Prusa Core One.</p>
+                    <p data-i18n="liteDesc" class="text-textMuted mb-6 flex-grow">La opción plug-and-play. Imprime el chasis y las caras intercambiables. Cero electrónica, 100% estética para acompañar tu impresora.</p>
                     <ul class="space-y-3 mb-8 text-sm text-gray-400">
                         <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> <span data-i18n="liteF1">Ensamblaje sin tornillos (Magnético)</span></li>
                         <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> <span data-i18n="liteF2">Placas faciales intercambiables en segundos</span></li>
@@ -119,9 +119,9 @@
                         <h3 class="text-2xl font-bold text-white">Simbionte <span class="text-prusaOrange">PRO</span></h3>
                         <i data-lucide="cpu" class="w-8 h-8 text-prusaOrange"></i>
                     </div>
-                    <p data-i18n="proDesc" class="text-textMuted mb-6 flex-grow">El vigilante digital. Procesador ESP32 integrado, conexión directa con la API de PrusaLink, sensor ambiental y una pantalla OLED que reacciona a los eventos de la impresora.</p>
+                    <p data-i18n="proDesc" class="text-textMuted mb-6 flex-grow">El vigilante digital. Procesador ESP32 integrado, conexión directa con PrusaLink y Klipper (Moonraker), sensor ambiental y pantalla OLED que reacciona a los eventos.</p>
                     <ul class="space-y-3 mb-8 text-sm text-gray-300">
-                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-prusaOrange"></i> <span data-i18n="proF1">API REST Integrada con PrusaLink</span></li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-prusaOrange"></i> <span data-i18n="proF1">API REST Integrada (PrusaLink & Klipper)</span></li>
                         <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-prusaOrange"></i> <span data-i18n="proF2">Sensor AHT10 (Alerta de Humedad)</span></li>
                         <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-prusaOrange"></i> <span data-i18n="proF3">Memoria EEPROM para Sistema de Logros</span></li>
                     </ul>
@@ -152,7 +152,7 @@
                             <i data-lucide="box" class="w-6 h-6 text-gray-400 mt-1"></i>
                             <div>
                                 <h4 data-i18n="matPrintTitle" class="font-bold text-white text-sm">Piezas Impresas (PLA o PETG)</h4>
-                                <p data-i18n="matPrintDesc" class="text-xs text-textMuted mt-1">Descarga los STLs desde Printables. Puedes usar PLA sin problemas, ya que el exterior de la Prusa Core One no genera calor suficiente para deformarlo.</p>
+                                <p data-i18n="matPrintDesc" class="text-xs text-textMuted mt-1">Descarga los STLs desde Printables. Puedes usar PLA sin problemas, ya que el exterior de la impresora no genera calor suficiente para deformarlo.</p>
                             </div>
                         </li>
                     </ul>
@@ -165,7 +165,7 @@
                             <i data-lucide="microchip" class="w-6 h-6 text-prusaOrange mt-1"></i>
                             <div class="flex-grow">
                                 <h4 class="font-bold text-white text-sm">Placa ESP32 Dev Module</h4>
-                                <p data-i18n="matEspDesc" class="text-xs text-textMuted mt-1">El cerebro del sistema con Wi-Fi nativo para conectarse a PrusaLink.</p>
+                                <p data-i18n="matEspDesc" class="text-xs text-textMuted mt-1">El cerebro del sistema con Wi-Fi nativo para conectarse a tu red.</p>
                                 <a href="https://es.aliexpress.com/item/1005007820190456.html" target="_blank" class="inline-flex items-center gap-1 mt-2 text-[11px] font-bold text-prusaOrange hover:text-orange-400 transition-colors">
                                     <i data-lucide="shopping-cart" class="w-3 h-3"></i> <span data-i18n="buyLink">Comprar en AliExpress</span>
                                 </a>
@@ -293,10 +293,10 @@
                             </div>
                         </li>
                         <li class="flex items-start gap-3">
-                            <div class="mt-1 bg-gray-800 p-1 rounded"><i data-lucide="file-zip" class="w-4 h-4 text-white"></i></div>
+                            <div class="mt-1 bg-gray-800 p-1 rounded"><i data-lucide="layout-template" class="w-4 h-4 text-white"></i></div>
                             <div>
-                                <h4 data-i18n="arch2Title" class="text-sm font-bold text-white">Compresión GZIP Hexadecimal</h4>
-                                <p data-i18n="arch2Desc" class="text-xs text-gray-500">Todo el panel web está minificado y comprimido reduciendo el uso de RAM en un 80%.</p>
+                                <h4 data-i18n="arch2Title" class="text-sm font-bold text-white">WebUI en Texto Plano</h4>
+                                <p data-i18n="arch2Desc" class="text-xs text-gray-500">Panel web reescrito en HTML puro (PROGMEM). 100% modificable por la comunidad sin scripts de descompresión.</p>
                             </div>
                         </li>
                         <li class="flex items-start gap-3">
@@ -324,10 +324,10 @@
                         </div>
                         <div class="bg-darkBg p-4 rounded-xl border border-gray-800">
                             <div class="flex items-center justify-between mb-2">
-                                <h4 data-i18n="road2Title" class="text-sm font-bold text-white">Soporte Multi-Impresora</h4>
-                                <span class="text-[10px] bg-gray-700 text-gray-300 px-2 py-0.5 rounded">Planeado</span>
+                                <h4 data-i18n="road2Title" class="text-sm font-bold text-white">Soporte Klipper</h4>
+                                <span class="text-[10px] bg-green-500/20 text-green-400 px-2 py-0.5 rounded">¡Disponible!</span>
                             </div>
-                            <p data-i18n="road2Desc" class="text-xs text-gray-500">Ampliación de la API para soportar OctoPrint y Klipper de forma nativa.</p>
+                            <p data-i18n="road2Desc" class="text-xs text-gray-500">¡Completado en la V1.5! Integración nativa con la API de Moonraker.</p>
                         </div>
                     </div>
                 </div>
@@ -351,7 +351,7 @@
         <div class="max-w-6xl mx-auto px-4">
             <div class="text-center mb-16 reveal">
                 <h2 data-i18n="glossaryTitle" class="text-3xl font-extrabold text-white mb-4">Inteligencia <span class="text-prusaOrange">Reactiva</span></h2>
-                <p data-i18n="glossaryDesc" class="text-textMuted">El código C++ traduce los eventos de PrusaLink en expresiones dinámicas.</p>
+                <p data-i18n="glossaryDesc" class="text-textMuted">El código C++ traduce los eventos de la impresora en expresiones dinámicas.</p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 reveal">
                 <div class="bg-darkCard p-6 rounded-2xl border border-gray-800 text-center">
@@ -394,7 +394,7 @@
                     <ol class="text-xs text-gray-400 space-y-2 list-decimal list-inside ml-2">
                         <li data-i18n="step1">Conecta el ESP32 a la corriente.</li>
                         <li data-i18n="step2">Busca en tu teléfono el Wi-Fi "SIMBIONTE_SETUP" (Contraseña: Cocolab3D).</li>
-                        <li data-i18n="step3">Ingresa tus datos, la IP de tu computador/simulador y elige la unidad térmica (C/F).</li>
+                        <li data-i18n="step3">Ingresa tus datos, elige tu sistema (Prusa/Klipper) y pon la IP de la impresora.</li>
                     </ol>
                 </div>
             </div>
@@ -420,34 +420,34 @@
 
     <footer class="py-12 border-t border-gray-800 text-center text-textMuted text-xs bg-darkBg">
         <p>&copy; 2026 Cocolab3D. Todos los derechos reservados.</p>
-        <p class="mt-2 text-gray-600">Creado para el concurso de Printables - Prusa Core One.</p>
+        <p class="mt-2 text-gray-600">Creado para el concurso de Printables.</p>
     </footer>
 
     <script>
         const translations = {
             es: {
                 navVersions: "Ecosistema", navBOM: "Materiales", navWiring: "Cableado", navCustom: "Modding", navInstall: "Flashear", navFeedback: "Feedback",
-                badge: "Optimizado para Prusa Core One",
+                badge: "Compatible con PrusaLink y Klipper",
                 heroTitle: "Tu impresora nunca volverá a estar <span class='text-prusaOrange'>Sola</span>",
-                heroDesc: "Un copiloto de código abierto que se integra con la API de PrusaLink. Traduce telemetría en emociones, vigila la humedad y reacciona al estado de tu máquina en tiempo real.",
+                heroDesc: "Un copiloto de código abierto que se integra con las APIs de PrusaLink y Klipper. Traduce telemetría en emociones, vigila la humedad y reacciona al estado de tu máquina en tiempo real.",
                 btnHero1: "Flashear Firmware", btnHero2: "Ver Materiales",
                 
                 galTitle: "El Simbionte en <span class='text-prusaOrange'>Acción</span>",
                 galDesc: "Mira cómo reacciona en tiempo real a los eventos de impresión.",
                 
                 verTitle: "Un Ecosistema en <span class='text-prusaOrange'>Dos Sabores</span>", verDesc: "Diseñado tanto para entusiastas de la electrónica como para puristas de la impresión 3D.",
-                liteDesc: "La opción plug-and-play. Imprime el chasis y las caras intercambiables. Cero electrónica, 100% estética para acompañar tu Prusa Core One.",
+                liteDesc: "La opción plug-and-play. Imprime el chasis y las caras intercambiables. Cero electrónica, 100% estética para acompañar tu impresora.",
                 liteF1: "Ensamblaje sin tornillos (Magnético)", liteF2: "Placas faciales intercambiables en segundos",
                 
-                proDesc: "El vigilante digital. Procesador ESP32 integrado, conexión directa con la API de PrusaLink, sensor ambiental y una pantalla OLED que reacciona a los eventos.",
-                proF1: "API REST Integrada con PrusaLink", proF2: "Sensor AHT10 (Alerta de Humedad)", proF3: "Memoria EEPROM para Sistema de Logros",
+                proDesc: "El vigilante digital. Procesador ESP32 integrado, conexión directa con PrusaLink y Klipper (Moonraker), sensor ambiental y pantalla OLED que reacciona a los eventos.",
+                proF1: "API REST Integrada (PrusaLink & Klipper)", proF2: "Sensor AHT10 (Alerta de Humedad)", proF3: "Memoria EEPROM para Sistema de Logros",
 
                 bomTitle: "Lista de Materiales <span class='text-prusaOrange'>(BOM)</span>", bomDesc: "Todo lo que necesitas para construir tu Simbionte.",
                 bomLiteTitle: "Materiales Base (Ambas Versiones)",
                 matMagTitle: "Imanes de Neodimio N35 o N52 (10x2 mm)", matMagDesc: "El corazón del sistema. Sirven para anclar magnéticamente el Simbionte a la impresora, fijar las caras intercambiables y añadir accesorios extra. Necesitarás al menos 4 imanes base.",
-                matPrintTitle: "Piezas Impresas (PLA o PETG)", matPrintDesc: "Descarga los STLs desde Printables. Puedes usar PLA sin problemas.",
+                matPrintTitle: "Piezas Impresas (PLA o PETG)", matPrintDesc: "Descarga los STLs desde Printables. Puedes usar PLA sin problemas, ya que el exterior de la impresora no genera calor suficiente para deformarlo.",
                 bomProTitle: "Electrónica (Solo Versión PRO)",
-                matEspDesc: "El cerebro del sistema con Wi-Fi nativo para conectarse a PrusaLink.",
+                matEspDesc: "El cerebro del sistema con Wi-Fi nativo para conectarse a tu red.",
                 matOledTitle: "Pantalla OLED 1.54\" (I2C)", matOledDesc: "La versión de 1.54 pulgadas proporciona una visión nítida y amplia para las expresiones faciales y la telemetría.",
                 matWagoTitle: "Conector Bornes WAGO de 4 Entradas", matWagoDesc: "Esencial para centralizar y distribuir de forma segura la línea de voltaje continuo de 3.3V.",
                 matSensTitle: "Sensor AHT10 + Zumbador Pasivo", matSensDesc: "Sensor de humedad, más un Zumbador Pasivo (crucial para generar melodías PWM reales y no solo pitidos de un tono).",
@@ -463,17 +463,17 @@
 
                 archTitle: "Bajo el Capó (Arquitectura)", archDesc: "El software del Simbionte no es un simple script. Está diseñado bajo principios de ingeniería de software orientada a objetos (OOP).",
                 arch1Title: "C++ Orientado a Objetos", arch1Desc: "Motores gráficos y de audio separados en clases independientes para modularidad total.",
-                arch2Title: "Compresión GZIP Hexadecimal", arch2Desc: "Todo el panel web está minificado y comprimido reduciendo el uso de RAM en un 80%.",
+                arch2Title: "WebUI en Texto Plano", arch2Desc: "Panel web reescrito en HTML puro (PROGMEM). 100% modificable por la comunidad sin scripts de descompresión.",
                 arch3Title: "Memoria EEPROM y Bitmasking", arch3Desc: "El sistema de logros utiliza máscaras de bits para guardar el progreso histórico permanentemente.",
 
                 roadTitle: "Hoja de Ruta (Roadmap)", roadDesc: "El proyecto está vivo. Estas son las funcionalidades planeadas para las próximas versiones.",
                 road1Title: "Notificaciones IFTTT / Home Assistant", road1Desc: "Permitirá que el Simbionte te envíe una notificación al móvil.",
-                road2Title: "Soporte Multi-Impresora", road2Desc: "Ampliación de la API para soportar OctoPrint y Klipper de forma nativa.",
+                road2Title: "Soporte Klipper", road2Desc: "¡Completado en la V1.5! Integración nativa con la API de Moonraker.",
 
                 customTitle: "Modding Infinito: <span class='text-prusaOrange'>Sombreros Magnéticos</span>",
                 customDesc: "La carcasa del Simbionte cuenta con alojamientos para imanes de 10x2 mm en la parte superior. Puedes imprimir sombreros o accesorios y personalizarlos en 1 segundo. ¡Sube tus Remix en Printables!",
 
-                glossaryTitle: "Inteligencia <span class='text-prusaOrange'>Reactiva</span>", glossaryDesc: "El código C++ traduce los eventos de PrusaLink en expresiones dinámicas.",
+                glossaryTitle: "Inteligencia <span class='text-prusaOrange'>Reactiva</span>", glossaryDesc: "El código C++ traduce los eventos de la impresora en expresiones dinámicas.",
                 faceHappyTitle: "Printing (Imprimiendo)", faceHappyDesc: "Estado normal. Muestra porcentaje, temperatura y animaciones autónomas.",
                 faceErrorTitle: "Error Crítico", faceErrorDesc: "El buzzer pasivo emite una alarma SOS musical y los ojos muestran una X.",
                 faceDizzyTitle: "Mareado (Simulado)", faceDizzyDesc: "Animación especial que refleja inestabilidad o movimientos agresivos.",
@@ -485,7 +485,7 @@
                 stepTitle: "Pasos post-instalación:", 
                 step1: "Conecta el ESP32 a la corriente.", 
                 step2: "Busca en tu teléfono el Wi-Fi 'SIMBIONTE_SETUP' (Contraseña: Cocolab3D).", 
-                step3: "Ingresa tus datos, la IP de tu computador/simulador y elige la unidad térmica (C/F).", 
+                step3: "Ingresa tus datos, elige tu sistema (Prusa/Klipper) y pon la IP de la impresora.", 
                 
                 tipTitle: "¿Ya instalaste el Simbionte y quieres ver su Panel de Control?",
                 tipDesc: "Para volver a entrar y modificar parámetros en el futuro, asegúrate de estar conectado al mismo Wi-Fi y abre tu navegador web en la dirección <a href='http://simbionte.local' class='text-prusaOrange font-bold hover:underline'>http://simbionte.local</a> o escanea tu red con la app <span class='text-gray-300'>Fing</span> para descubrir su IP.",
@@ -496,27 +496,27 @@
             },
             en: {
                 navVersions: "Ecosystem", navBOM: "BOM", navWiring: "Wiring", navCustom: "Mods", navInstall: "Flash", navFeedback: "Feedback",
-                badge: "Optimized for Prusa Core One",
+                badge: "Compatible with PrusaLink & Klipper",
                 heroTitle: "Your Printer Will Never Be <span class='text-prusaOrange'>Alone</span> Again",
-                heroDesc: "An open-source co-pilot integrated with the PrusaLink API. Translates telemetry into emotions, monitors humidity, and reacts to your machine's state in real-time.",
+                heroDesc: "An open-source co-pilot integrated with PrusaLink & Klipper APIs. Translates telemetry into emotions, monitors humidity, and reacts to your machine's state in real-time.",
                 btnHero1: "Flash Firmware", btnHero2: "View BOM",
 
                 galTitle: "Simbionte in <span class='text-prusaOrange'>Action</span>",
                 galDesc: "Watch how it reacts in real-time to printing events.",
                 
                 verTitle: "An Ecosystem in <span class='text-prusaOrange'>Two Flavors</span>", verDesc: "Designed for both electronics enthusiasts and 3D printing purists.",
-                liteDesc: "The plug-and-play option. Print the chassis and the interchangeable faces. Zero electronics, 100% aesthetic to accompany your Prusa.",
+                liteDesc: "The plug-and-play option. Print the chassis and the interchangeable faces. Zero electronics, 100% aesthetic to accompany your printer.",
                 liteF1: "Screwless Assembly (Magnetic)", liteF2: "Interchangeable faceplates in seconds",
                 
-                proDesc: "The digital watchman. Built-in ESP32, direct connection to the PrusaLink API, environmental sensor, and an OLED screen that reacts to events.",
-                proF1: "Native REST API Integration", proF2: "AHT10 Sensor (Humidity Alert)", proF3: "EEPROM Memory for Achievement System",
+                proDesc: "The digital watchman. Built-in ESP32, direct connection to PrusaLink or Klipper, environmental sensor, and an OLED screen that reacts to events.",
+                proF1: "Native REST API (PrusaLink & Klipper)", proF2: "AHT10 Sensor (Humidity Alert)", proF3: "EEPROM Memory for Achievement System",
 
                 bomTitle: "Bill of Materials <span class='text-prusaOrange'>(BOM)</span>", bomDesc: "Everything you need to build your Simbionte.",
                 bomLiteTitle: "Base Materials (Both Versions)",
-                matMagTitle: "Neodymium Magnets N35 or N52 (10x2 mm)", matMagDesc: "The core of the system. Used to magnetically anchor the Simbionte to your Prusa, attach interchangeable faces, and add extra accessories. You'll need at least 4 base magnets.",
+                matMagTitle: "Neodymium Magnets N35 or N52 (10x2 mm)", matMagDesc: "The core of the system. Used to magnetically anchor the Simbionte to your printer, attach interchangeable faces, and add extra accessories. You'll need at least 4 base magnets.",
                 matPrintTitle: "Printed Parts (PLA or PETG)", matPrintDesc: "Download the STLs from Printables. You can safely use PLA.",
                 bomProTitle: "Electronics (PRO Version Only)",
-                matEspDesc: "The brain with native Wi-Fi to connect to PrusaLink.",
+                matEspDesc: "The brain with native Wi-Fi to connect to your network.",
                 matOledTitle: "OLED Screen 1.54\" (I2C)", matOledDesc: "The 1.54-inch version provides a crisp, wide view for facial expressions and telemetry.",
                 matWagoTitle: "4-Slot WAGO Terminal Block", matWagoDesc: "Essential for centralizing and securely distributing the 3.3V DC power rail to all individual modules.",
                 matSensTitle: "AHT10 Sensor + Passive Buzzer", matSensDesc: "Humidity sensor, plus a Passive Buzzer (crucial for generating real PWM melodies and not just single-tone beeps).",
@@ -532,17 +532,17 @@
 
                 archTitle: "Under the Hood (Architecture)", archDesc: "Simbionte's software is not a simple script. It's designed under Object-Oriented Programming (OOP) principles.",
                 arch1Title: "Object-Oriented C++", arch1Desc: "Graphics and audio engines separated into independent classes for total modularity.",
-                arch2Title: "Hexadecimal GZIP Compression", arch2Desc: "The entire web panel is minified and compressed reducing ESP32 RAM usage by 80%.",
+                arch2Title: "Plain Text WebUI", arch2Desc: "Web panel rewritten in pure HTML (PROGMEM). 100% moddable by the community without decompression scripts.",
                 arch3Title: "EEPROM Memory & Bitmasking", arch3Desc: "The achievement system uses bitmasks to permanently save historical progress.",
 
                 roadTitle: "Roadmap", roadDesc: "The project is alive. These are the planned features for future firmware releases.",
                 road1Title: "IFTTT / Home Assistant Notifications", road1Desc: "Will allow Simbionte to send a mobile push notification.",
-                road2Title: "Multi-Printer Support", road2Desc: "API expansion to support OctoPrint and Klipper natively.",
+                road2Title: "Klipper Support", road2Desc: "Completed in V1.5! Native integration with the Moonraker API.",
 
                 customTitle: "Infinite Modding: <span class='text-prusaOrange'>Magnetic Hats</span>",
                 customDesc: "The Simbionte chassis features slots for 10x2 mm magnets on top. You can print hats, headphones, or accessories and customize it in 1 second. Share your Remixes on Printables!",
 
-                glossaryTitle: "<span class='text-prusaOrange'>Reactive</span> Intelligence", glossaryDesc: "C++ code translates PrusaLink events into dynamic expressions.",
+                glossaryTitle: "<span class='text-prusaOrange'>Reactive</span> Intelligence", glossaryDesc: "C++ code translates printer events into dynamic expressions.",
                 faceHappyTitle: "Printing", faceHappyDesc: "Normal state. Shows percentage, temp, and autonomous boredom animations.",
                 faceErrorTitle: "Critical Error", faceErrorDesc: "Musical SOS alarm via passive buzzer and X eyes.",
                 faceDizzyTitle: "Dizzy (Simulated)", faceDizzyDesc: "Special animation reflecting instability or aggressive movements.",
@@ -554,7 +554,7 @@
                 stepTitle: "Post-installation steps:", 
                 step1: "Power the ESP32.", 
                 step2: "Connect to the 'SIMBIONTE_SETUP' Wi-Fi network (Password: Cocolab3D).", 
-                step3: "Enter your credentials, computer/simulator IP and select temperature scale (C/F).", 
+                step3: "Enter your credentials, choose your system (Prusa/Klipper) and set the printer IP.", 
                 
                 tipTitle: "Already installed the Simbionte and want to see its Dashboard?",
                 tipDesc: "To reconfigure or see the dashboard anytime, make sure you are on the same Wi-Fi network and open your browser at <a href='http://simbionte.local' class='text-prusaOrange font-bold hover:underline'>http://simbionte.local</a> or scan your local network using the <span class='text-gray-300'>Fing</span> app to discover its IP.",
