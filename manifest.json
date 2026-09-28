@@ -5,7 +5,10 @@
     {
       "chipFamily": "ESP32",
       "parts": [
-        { "path": "SimbionteOS.bin", "offset": 0 }
+        {
+          "path": "SimbionteOS_Full.bin",
+          "offset": 0
+        }
       ]
     }
   ]
