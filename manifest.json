@@ -1,13 +1,25 @@
 {
   "name": "Simbionte OS",
-  "version": "1.5",
+  "version": "1.5.1",
   "builds": [
     {
       "chipFamily": "ESP32",
       "parts": [
         {
-          "path": "SimbionteOS_Full.bin",
-          "offset": 0
+          "path": "SimbionteOS.ino.bootloader.bin",
+          "offset": 4096
+        },
+        {
+          "path": "SimbionteOS.ino.partitions.bin",
+          "offset": 32768
+        },
+        {
+          "path": "boot_app0.bin",
+          "offset": 57344
+        },
+        {
+          "path": "SimbionteOS.bin",
+          "offset": 65536
         }
       ]
     }
